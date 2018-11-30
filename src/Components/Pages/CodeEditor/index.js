@@ -1,33 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { PureComponent } from 'react';
 
-import CodeEditor from './Components/Pages/CodeEditor/';
-
-class App extends Component {
-
-  componentDidMount() {
-    var html = document.getElementById("html");
-    var css = document.getElementById("css");
-    var js = document.getElementById("js");
-    var code = document.getElementById("code").contentWindow.document;
-
-    document.body.onkeyup = function() {
-      code.open();
-      code.writeln(
-        html.value +
-          "<style>" +
-          css.value +
-          "</style>" +
-          "<script>" +
-          js.value +
-          "</script>"
-      );
-      code.close();
-    };
-  }
-
-
+class CodeEditor extends PureComponent {
   render() {
     return (
       <div className="App">
@@ -53,5 +26,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
