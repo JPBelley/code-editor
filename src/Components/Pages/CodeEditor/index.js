@@ -55,15 +55,15 @@ class CodeEditor extends PureComponent {
           </div>
           <div className="code-inputs">
             <div className="textarea-code">
-              <div className="textarea-title">HMTL</div>
+              <div className="textarea-title">HMTL <span> > </span> </div>
               <textarea id="html"></textarea>
             </div>
             <div className="textarea-code">
-              <div className="textarea-title">CSS</div>
+              <div className="textarea-title">CSS <span> > </span> </div>
               <textarea id="css"></textarea>
             </div>
             <div className="textarea-code">
-              <div className="textarea-title">JavaScript</div>
+              <div className="textarea-title">JavaScript <span> > </span> </div>
               <textarea id="js"></textarea>
             </div>
           </div>

@@ -10,17 +10,14 @@ import Homepage from './Components/Pages/Homepage/';
 
 class App extends Component {
 
-
-
-
   render() {
     return (
-      <div className="App">
+      <div className="App" basename="/code-editor">
         <Header></Header>
         <BrowserRouter>
           <React.Fragment>
-            <Route exact path="/" component={Homepage} />
-            <Route path="/editor" component={CodeEditor} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage} />
+            <Route path={process.env.PUBLIC_URL + '/editor'} component={CodeEditor} />
           </React.Fragment>
         </BrowserRouter>
 

@@ -54,6 +54,13 @@ header li {
   margin-right: 25px;
 }
 
+.homepage {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  padding: 10%;
+}
+
 .editor-interface {
   position: fixed;
   top: 50px; right: 0; bottom: 52%; left: 0;
