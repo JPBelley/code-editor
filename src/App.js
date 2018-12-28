@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,15 +12,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" basename="/code-editor">
+      <div className="App">
         <Header></Header>
-        <BrowserRouter>
+        <HashRouter>
           <React.Fragment>
-            <Route exact path={process.env.PUBLIC_URL + '/'} component={Homepage} />
-            <Route path={process.env.PUBLIC_URL + '/editor'} component={CodeEditor} />
+            <Route exact path='/' component={Homepage} />
+            <Route path='/editor' component={CodeEditor} />
           </React.Fragment>
-        </BrowserRouter>
-
+        </HashRouter>
       </div>
     );
   }

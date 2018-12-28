@@ -1,4 +1,7 @@
 import React, { PureComponent } from 'react';
+import Steps from './Steps';
+import Step1 from './Step1';
+import Step2 from './Step2';
 
 class CodeEditor extends PureComponent {
   componentDidMount() {
@@ -41,17 +44,7 @@ class CodeEditor extends PureComponent {
       <div>
         <div className="editor-interface">
           <div className="instructions">
-            <h1>Instructions</h1>
-            <h2>Initialiser les styles par défault des navigateurs</h2>
-            <ul>
-              <li>À l'aide du tag html et body, mettre l'élement "margin" et "padding" à 0 dans la section CSS afin qu'il n'y ait pas d'espace blanc sur votre page web</li>
-              <li></li>
-            </ul>
-            <h2>Créer une banière "hero"</h2>
-            <ul>
-              <li>Créer une balise header dans la section HTML</li>
-              <li></li>
-            </ul>
+            <Steps></Steps>
           </div>
           <div className="code-inputs">
             <div className="textarea-code">
