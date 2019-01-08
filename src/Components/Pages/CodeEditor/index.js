@@ -3,6 +3,11 @@ import Steps from './Steps';
 import Step1 from './Step1';
 import Step2 from './Step2';
 
+// Textarea
+import HtmlTextarea from './Textarea/HtmlTextarea';
+import CssTextarea from './Textarea/CssTextarea';
+import JsTextarea from './Textarea/JsTextarea';
+
 class CodeEditor extends PureComponent {
   componentDidMount() {
     var html = document.getElementById("html");
@@ -47,18 +52,9 @@ class CodeEditor extends PureComponent {
             <Steps></Steps>
           </div>
           <div className="code-inputs">
-            <div className="textarea-code">
-              <div className="textarea-title">HMTL <span> > </span> </div>
-              <textarea id="html"></textarea>
-            </div>
-            <div className="textarea-code">
-              <div className="textarea-title">CSS <span> > </span> </div>
-              <textarea id="css"></textarea>
-            </div>
-            <div className="textarea-code">
-              <div className="textarea-title">JavaScript <span> > </span> </div>
-              <textarea id="js"></textarea>
-            </div>
+            <HtmlTextarea></HtmlTextarea>
+            <CssTextarea></CssTextarea>
+            <JsTextarea></JsTextarea>
           </div>
         </div>
         <div>
