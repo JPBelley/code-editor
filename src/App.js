@@ -5,8 +5,8 @@ import './App.css';
 
 import Header from './Components/Header/';
 
-import CodeEditor from './Components/Pages/CodeEditor/';
-import Homepage from './Components/Pages/Homepage/';
+import CodeEditor from './Components/Pages/CodeEditor/CodeEditor';
+import Homepage from './Components/Pages/Homepage/Homepage';
 
 class App extends Component {
 

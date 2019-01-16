@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import CodeImg from './images/code_img.jpg';
 import styled from 'styled-components';
+import Mailchimp from './Mailchimp';
 
 class Homepage extends PureComponent {
 
@@ -11,6 +12,10 @@ class Homepage extends PureComponent {
 
     const Hero = styled.div `
       display: flex;
+    `;
+
+    const CardLink = styled.a `
+      color: black;
     `;
 
     return (
@@ -31,7 +36,7 @@ class Homepage extends PureComponent {
             <div className="card-course">
               <h3>Contruire une landing page</h3>
               <p>Contruisez votre propre landing page étape par étape</p>
-              <a href="#">Accédez au cours</a>
+              <CardLink href="#">Accédez au cours</CardLink>
             </div>
           </div>
         </Hero>

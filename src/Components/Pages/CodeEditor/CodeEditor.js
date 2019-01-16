@@ -15,19 +15,8 @@ class CodeEditor extends PureComponent {
     var js = document.getElementById("js");
     var code = document.getElementById("code").contentWindow.document;
 
-    document.body.onkeyup = function() {
-      code.open();
-      code.writeln(
-        html.value +
-          "<style>" +
-          css.value +
-          "</style>" +
-          "<script>" +
-          js.value +
-          "</script>"
-      );
-      code.close();
-    };
+    this.writeCode(html, css, js, code);
+    document.body.onkeyup = () => this.writeCode(html, css, js, code);
 
     // Use tab to indent in textarea
     var textareas = document.getElementsByTagName('textarea');
@@ -42,6 +31,21 @@ class CodeEditor extends PureComponent {
         }
       }
     }
+  }
+
+  // Write inside the iFrame function
+  writeCode = (html, css, js, code) =>  {
+    code.open();
+    code.writeln(
+      html.value +
+        "<style>" +
+        css.value +
+        "</style>" +
+        "<script>" +
+        js.value +
+        "</script>"
+    );
+    code.close();
   }
 
   render() {
