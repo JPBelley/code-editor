@@ -2,6 +2,10 @@ import React, { PureComponent } from 'react';
 import CodeImg from './images/code_img.jpg';
 import styled from 'styled-components';
 import Mailchimp from './Mailchimp';
+import CoinbaseCommerceButton from 'react-coinbase-commerce';
+import 'react-coinbase-commerce/dist/coinbase-commerce-button.css';
+
+
 
 class Homepage extends PureComponent {
 
@@ -40,6 +44,8 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </Hero>
+        <CoinbaseCommerceButton checkoutId={'97077c4f-5c42-4236-84bf-14d66972c47e'} />
+
       </div>
     );
   }

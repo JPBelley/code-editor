@@ -112,6 +112,27 @@ class Steps extends PureComponent {
       )
     }
 
+    if(this.state.step === 3) {
+      steps = (
+        <div>
+          <h1>Instructions</h1>
+          <h2>Styliser le titre</h2>
+          <ul>
+            <li>Afin d'avoir un titre qui a plus d'impact dans le hero, je consceil de changer la police par helvetica (Police disponible par défault dans les browser)<br /> Ex : <br />
+              <div className="code-wrapper">
+              <code>.hero &#123;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;background-image: url('https://source.unsplash.com/random');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: Helvetica;<br />
+                  &#125;<br />
+                </code>
+              </div>
+            </li>
+            <li>Au niveau design, il serait bien d'avoir un titre plus gros pour qu'il ait plus d'impact. Essayer avec font-size: 50px; font-weight: 700; color: white;  Ensuite, vous êtes libre de changer selon vos préférences personnelles</li>
+          </ul>
+        </div>
+      )
+    }
+
 
     return (
 
