@@ -1,27 +1,32 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, HashRouter } from 'react-router-dom';
-import logo from './logo.svg';
+import { Route, HashRouter } from 'react-router-dom';
 import './App.css';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 
 import Header from './Components/Header/';
 
 import CodeEditor from './Components/Pages/CodeEditor/CodeEditor';
 import Homepage from './Components/Pages/Homepage/Homepage';
 
+const client = new ApolloClient();
+
 class App extends Component {
 
   render() {
 
     return (
-      <div className="App">
-        <Header></Header>
-        <HashRouter>
-          <React.Fragment>
-            <Route exact path='/' component={Homepage} />
-            <Route path='/editor' component={CodeEditor} />
-          </React.Fragment>
-        </HashRouter>
-      </div>
+        <ApolloProvider client={client}>
+          <div className="App">
+            <Header></Header>
+            <HashRouter>
+              <React.Fragment>
+                <Route exact path='/' component={Homepage} />
+                <Route path='/editor' component={CodeEditor} />
+              </React.Fragment>
+            </HashRouter>
+          </div>
+        </ApolloProvider>
     );
   }
 }
