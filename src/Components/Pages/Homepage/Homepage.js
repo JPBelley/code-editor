@@ -44,8 +44,8 @@ class Homepage extends PureComponent {
             </div>
           </div>
         </Hero>
-        <CoinbaseCommerceButton checkoutId={'97077c4f-5c42-4236-84bf-14d66972c47e'} />
-
+        <Mailchimp></Mailchimp>
+        <CoinbaseCommerceButton checkoutId={'97077c4f-5c42-4236-84bf-14d66972c47e'} >Donate with Bitcoin</CoinbaseCommerceButton>
       </div>
     );
   }
