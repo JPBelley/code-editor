@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #171819;
+  color: rgba(238,238,238, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.code-wrapper {
+  background: white;
+  padding: 10px;
+  margin: 15px -10px 15px -25px;
+}
+
+code {
+  font-size: 12px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+    color: black;
+    word-break: break-all;
+}
+
+iframe {
+  position: fixed;
+  top: 48%; right: 0; bottom: 0; left: 25%;
+  width: 100%;
+  color: #fff;
+  border: none;
+  background: white;
+  height: 52%;
+  overflow: scroll;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid rgba(238,238,238, 0.2);
+}
+
+textarea {
+  overflow-y: scroll;
+  padding-bottom: 50px;
+}
+
+.homepage {
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+  padding: 10%;
+}
+
+.editor-interface {
+  position: fixed;
+  top: 50px; right: 0; bottom: 0; left: 0;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(238,238,238, 0.2);
+}
+
+.instructions {
+   
+  width: 25%;
+  text-align: left;
+  padding: 55px 20px;
+  
+
+ 
+
+
+
+}
+
+.instructions h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 50%;
+  border-bottom: 1px solid rgba(238,238,238, 0.2);
+  padding-bottom: 5px;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+.instructions h2 {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.instructions ul {
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+.instructions li {
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+.code-inputs {
+  display: flex;
+  width: 75%;
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid rgba(238,238,238, 0.2);
+
+}
+
+.textarea-code {
+  flex-grow: 1;
+  position: relative;
+}
+
+.textarea-title {
+  position: absolute;
+  color: rgba(238,238,238, 0.8);
+  font-size: 14px;
+  padding: 10px;
+}
+
+.code-inputs textarea {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: inherit;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-left: 1px solid rgba(238,238,238, 0.2);
+  padding: 35px 10px;
+  outline: 0;
+  resize: none;
+}
