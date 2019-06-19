@@ -1,5 +1,10 @@
 import React, { PureComponent } from 'react';
 
+
+
+
+
+
 var displayNone = {
   display: "none",
 };
@@ -20,13 +25,13 @@ class Mailchimp extends PureComponent {
       
       <React.Fragment>
         <div id="mc_embed_signup">
-          <form action="https://artwillsaveus.us19.list-manage.com/subscribe/post?u=bd80fab35ff40911dcb1d61e3&amp;id=d12e0fdb52" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
+          <form action="https://artwillsaveus.us19.list-manage.com/subscribe/post?u=bd80fab35ff40911dcb1d61e3&amp;id=d12e0fdb52" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" novalidate>
             <div id="mc_embed_signup_scroll">
               <h2>Subscribe</h2>
               <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
               <div className="mc-field-group">
                 <label for="mce-EMAIL">Email Address  <span className="asterisk">*</span></label>
-                <input type="email" value="" name="EMAIL" className="required email" id="mce-EMAIL" />
+                <input type="email"  name="EMAIL" className="required email" id="mce-EMAIL" />
                 <div id="mce-responses" className="clear">
                     <div className="response" id="mce-error-response" style={displayNone}></div>
                     <div className="response" id="mce-success-response" style={displayNone}></div>
@@ -36,8 +41,12 @@ class Mailchimp extends PureComponent {
               </div>
             </div>
           </form>
-        </div>        
+        </div> 
+
+
       </React.Fragment>
+
+
     );
   }
 }
