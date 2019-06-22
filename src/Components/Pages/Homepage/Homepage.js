@@ -29,7 +29,6 @@ class Homepage extends PureComponent {
           <div>
             <ImgCode src={CodeImg} alt="" />
           </div>
-
           <div>
             <h1>
               Bienvenue
